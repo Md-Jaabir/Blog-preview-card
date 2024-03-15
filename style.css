@@ -1,0 +1,101 @@
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div,p,h1,h2{
+    font-family: "Figtree", sans-serif;
+}
+
+div,p{
+    font-size: 16px;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Yellow);
+    min-height: 100vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--White);
+    border-radius: 15px;
+    padding: 20px;
+    width: 380px;
+    box-shadow: 4px 4px 4px 4px var(--Black);
+}
+
+.card .illustration{
+    border-radius: 12px;
+}
+
+.card .badge{
+    margin:20px 0 12px 0;
+    background-color: var(--Yellow);
+    padding: 5px 10px;
+    color: var(--Black);
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.card .date{
+    margin-top: 0;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--Black);
+}
+
+.card .header{
+    font-weight: 800;
+    color: var(--Black);
+    margin-bottom: 15px;
+}
+
+.card .description{
+    color: var(--Grey);
+    line-height: 24px;
+}
+
+.card .profile{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.profile img{
+    width: 30px;
+}
+
+.profile p{
+    font-weight: 800;
+}
+
+@media screen and (max-width:425px) {
+    .card{
+        width: 85%;
+    }
+
+    .card .illustration{
+        width: 100%;
+    }
+
+    .card .header{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+}
